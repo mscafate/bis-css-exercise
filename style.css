@@ -1,0 +1,110 @@
+body {
+  background-color: rgba(0, 0, 0, 0.849);
+  font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+  font-weight: 900;
+  font-size: 3vw;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  position: absolute;
+  top: 7%;
+  bottom: 7%;
+  left: 17.4%;
+  right: 17.4%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: white;
+  padding: 16px;
+  padding-top: 17px;
+  padding-bottom: 22px;
+}
+
+@keyframes box-color {
+  50% {
+    background-color: blue;
+  }
+}
+
+.box-one {
+  background-color: rgb(255, 217, 0);
+  display: inline-block;
+  width: 33%;
+  height: 100%;
+  border: 2px solid black;
+  border-right: 1.5px solid black;
+  border-bottom: 3px solid black;
+  animation: box-color 2.7s infinite ease both;
+}
+
+.box-two {
+  display: inline-block;
+  width: 33%;
+  height: 100%;
+  border: 2px solid black;
+  border-left: 1.5px solid black;
+  border-right: 1.5px solid black;
+  border-bottom: 3px solid black;
+}
+
+.box-three {
+  display: inline-block;
+  width: 33%;
+  height: 100%;
+  border: 2px solid black;
+  border-left: 1.5px solid black;
+  background-color: blue;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+@keyframes text-color {
+  50% {
+    color: white;
+  }
+}
+.one {
+  position: relative;
+  top: 45%;
+  animation: text-color 2.7s infinite ease;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.two {
+  position: relative;
+  top: 45%;
+  font-size: 3vw;
+  font-stretch: condensed;
+  animation: rotate 2.7s infinite ease;
+}
+
+@keyframes down-up {
+  25% {
+    transform: translateY(400%);
+    color: white;
+  }
+  50% {
+    color: black;
+  }
+  75% {
+    transform: translateY(-400%);
+    color: white;
+  }
+  100% {
+    transform: translateY(0%);
+    color: black;
+  }
+}
+
+.three {
+  position: relative;
+  top: 45%;
+  animation: down-up 2.7s infinite ease;
+}
